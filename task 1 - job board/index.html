@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HireHub | Premium Job Board</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>HireHub</h1>
+  <p>Your Gateway to Modern Tech Careers</p>
+</header>
+
+<section class="search-section">
+
+  <input type="text" id="searchInput" placeholder="Search job title...">
+
+  <div class="filters">
+    <button onclick="filterJobs('All', this)" class="active">All</button>
+    <button onclick="filterJobs('Frontend', this)">Frontend</button>
+    <button onclick="filterJobs('Backend', this)">Backend</button>
+    <button onclick="filterJobs('Fullstack', this)">Fullstack</button>
+  </div>
+
+  <div class="top-actions">
+    <span id="jobCount"></span>
+    <button id="themeToggle">🌙 Toggle Theme</button>
+  </div>
+
+</section>
+
+<section class="jobs-container" id="jobsContainer">
+</section>
+
+<footer class="footer">
+  <p>© 2026 HireHub. Designed uniquely for CodSoft Internship.</p>
+</footer>
+
+<!-- Apply Modal -->
+<div class="modal" id="applyModal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">×</span>
+    <h2 id="modalTitle"></h2>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <button onclick="submitApplication()">Submit Application</button>
+  </div>
+</div>
+
+<script src="script1.js"></script>
+</body>
+</html>
