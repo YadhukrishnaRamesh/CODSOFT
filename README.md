@@ -22,3 +22,18 @@ Features:
 - Implemented smooth scrolling using JavaScript
 - Added mobile responsiveness using CSS media queries
 - Ensured originality in structure, design, and content
+
+
+
+✅ Task 3 (Level 1): AstraCalc – Advanced Web Calculator
+
+Built a feature-rich, interactive web calculator demonstrating modern UI/UX principles and advanced JavaScript functionality.
+
+- Implemented responsive glassmorphism-based design
+- Developed dynamic theme switching (Dark/Light Mode)
+- Integrated calculation history using LocalStorage
+- Added animated UI effects (ripple, glow, smooth transitions)
+- Implemented keyboard support and mobile swipe gestures
+- Applied number formatting and animated result transitions
+- Enhanced interactivity with 3D tilt and background animations
+   -Ensured cross-device responsiveness and performance optimization
