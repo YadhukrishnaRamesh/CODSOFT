@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AstraCalc | Premium Calculator</title>
+<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">AstraCalc</div>
+  <div class="nav-actions">
+    <button id="themeToggle">🌙</button>
+    <button id="historyToggle">📜</button>
+  </div>
+</nav>
+
+<section class="app-wrapper">
+
+  <div class="calculator">
+
+    <div class="display">
+      <div id="preview"></div>
+      <input type="text" id="result" readonly>
+    </div>
+
+    <div class="buttons">
+      <button class="control" onclick="clearDisplay()">AC</button>
+      <button class="control" onclick="deleteLast()">DEL</button>
+      <button class="operator" onclick="append('%')">%</button>
+      <button class="operator" onclick="append('/')">÷</button>
+
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button class="operator" onclick="append('*')">×</button>
+
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button class="operator" onclick="append('-')">−</button>
+
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button class="operator" onclick="append('+')">+</button>
+
+      <button class="zero" onclick="append('0')">0</button>
+      <button onclick="append('.')">.</button>
+      <button class="equals" onclick="calculate()">=</button>
+    </div>
+
+  </div>
+
+  <div class="history-panel" id="historyPanel">
+    <h3>Calculation History</h3>
+    <ul id="historyList"></ul>
+    <button id="clearHistory">Clear History</button>
+  </div>
+
+</section>
+
+<script src="script3.js"></script>
+</body>
+</html>
